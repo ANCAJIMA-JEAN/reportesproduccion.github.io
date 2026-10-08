@@ -1,3 +1,0 @@
-@import "tailwindcss";
-@theme { --color-verde:#2E7D32; --color-verdeclaro:#81C784; --color-gris:#424242; --color-fondo:#F5F5F5; }
-body { background:#F5F5F5; color:#424242; font-family: system-ui, sans-serif; }
