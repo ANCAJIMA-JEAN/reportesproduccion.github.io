@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguimiento de reportes - Subgerencia de Producción</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<section id="login" class="login hidden">
+  <div class="login-box">
+    <h1 id="loginTitle"></h1>
+    <p>Inicia sesión con tu cuenta de Google autorizada.</p>
+    <div id="gbtn"></div>
+    <p id="loginMsg" class="err" role="alert"></p>
+  </div>
+</section>
+<div id="app" class="hidden">
+  <header class="top">
+    <h1 id="appTitle"></h1>
+    <div class="user"><span id="userName"></span><button id="logout" type="button">Salir</button></div>
+  </header>
+  <div class="bar">
+    <nav id="nav" aria-label="Principal"></nav>
+    <form id="searchForm" role="search"><input id="q" type="search" placeholder="Buscar: P-0048, Semana 39, ósmosis…" aria-label="Buscador global"></form>
+  </div>
+  <main id="view"></main>
+</div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="config/config.js"></script>
+<script src="frontend/js/api.js"></script>
+<script src="frontend/js/auth.js"></script>
+<script src="frontend/js/dashboard.js"></script>
+<script src="frontend/js/app.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer onload="Auth.init()"></script>
+</body>
+</html>
